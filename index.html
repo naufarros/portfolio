@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naufal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <div class="logo">NAUFAL F. F.</div>
+
+        <nav>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <!-- <a href="#contact">Contact</a> -->
+        </nav>
+
+        <!-- <button class="resume-btn">Download CV</button> -->
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-text">
+        <span class="subtitle"> HELLO, I'M </span>
+
+        <h1>
+          Naufal Fikry <br />
+          Farros
+        </h1>
+
+        <h3 class="job-title">
+          Graphic&nbsp;Designer &nbsp;&nbsp;•&nbsp;&nbsp; UI/UX&nbsp;Designer
+        </h3>
+
+        <p>
+          Graphic & UI/UX Designer from Bojonegoro, Indonesia. I design
+          intuitive interfaces and visual identities that blend aesthetics with
+          purpose — turning complex problems into clean, user-centered
+          solutions.
+        </p>
+
+        <!-- <div class="hero-buttons">
+          <a href="#projects" class="primary-btn"> View My Work </a>
+
+          <a href="#" class="secondary-btn"> Download CV </a>
+        </div> -->
+
+        <!-- <div class="skills">
+          <span>UI/UX Design</span>
+          <span>Graphic Design</span>
+        </div> -->
+
+        <div class="hero-contact">
+          <p>Let's Connect</p>
+
+          <div class="contact-icons">
+            <a href="https://wa.me/6285144903765" target="_blank">
+              <img src="assets/wa.png" alt="WhatsApp" />
+            </a>
+
+            <!-- <a href="https://instagram.com/naufalfarros" target="_blank">
+              <img src="assets/ig.png" alt="Instagram" />
+            </a> -->
+
+            <a href="mailto:naufalfarros@email.com">
+              <img src="assets/gmail.png" alt="Gmail" />
+            </a>
+
+            <a
+              href="https://linkedin.com/in/naufal-fikry-farros-82a77424a"
+              target="_blank"
+            >
+              <img src="assets/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/profile.png" alt="Profile" />
+
+        <div class="floating-card">
+          <h3><span id="designCounter">0</span></h3>
+          <small>Creative Design Projects</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <div class="about-card">
+        <h2>About Me</h2>
+
+        <p>
+          I am Naufal Fikry Farros, an undergraduate student in Applied Health
+          Information Management with a strong foundation in health data
+          management, EMR systems, and healthcare service workflows — built
+          through internships, academic projects, and organizational
+          involvement.
+        </p>
+
+        <p>
+          Driven by a passion for design, I specialize in UI/UX Design and
+          Graphic Design — crafting intuitive, user-centered interfaces and
+          visually compelling brand identities and digital publications. I
+          thrive at the intersection of analytical thinking and creativity,
+          transforming complex problems into clean, impactful digital solutions.
+          Currently seeking opportunities to grow as a UI/UX Designer and
+          Graphic Designer, particularly within the space of Health Technology
+          and Digital Product Development.
+        </p>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <h3>10+</h3>
+          <span>Design Projects</span>
+        </div>
+
+        <div class="stat-card">
+          <h3>2</h3>
+          <span>Internships</span>
+        </div>
+
+        <div class="tools-card">
+          <div class="tools-icons">
+            <img src="assets/figma.png" alt="Figma" />
+            <img src="assets/canva.png" alt="Canva" />
+            <img src="assets/procreate.jpeg" alt="Procreate" />
+          </div>
+
+          <div>
+            <span>Design Tools</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="skills" class="container">
+      <div class="section-title">
+        <h2>My Skills</h2>
+        <p>Providing end-to-end design solutions.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- UI UX -->
+        <div class="service-card">
+          <div class="icon">📱</div>
+          <h3>UI/UX Design</h3>
+          <ul>
+            <li>User Research</li>
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+            <li>Usability Testing</li>
+          </ul>
+        </div>
+
+        <!-- Graphic Design -->
+        <div class="service-card">
+          <div class="icon">🎨</div>
+          <h3>Graphic Design</h3>
+          <ul>
+            <li>Brand Identity</li>
+            <li>Typography</li>
+            <li>Logo Creation</li>
+            <li>Print Media</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container">
+      <div class="projects-header">
+        <div>
+          <h2>My Projects</h2>
+
+          <p>
+            A collection of healthcare and digital product design projects
+            showcasing my approach to user-centered design, problem-solving, and
+            visual communication.
+          </p>
+        </div>
+
+        <div class="project-filter">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="uiux">UI/UX</button>
+          <button data-filter="graphic">Graphic</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <!-- PROJECT 1 -->
+        <div class="project-card featured-project" data-category="uiux">
+          <img src="assets/sipkes.png" alt="Poli Gigi SIP-Kes" />
+
+          <div class="project-content">
+            <span class="project-tag"> UI Design </span>
+
+            <h3>Poli Gigi SIP-Kes</h3>
+
+            <p>
+              UI/UX case study for a dental clinic information system. Conducted
+              user flow planning, wireframing, prototyping, and interface design
+              to improve patient registration and queue management processes.
+            </p>
+
+            <a
+              href="https://www.figma.com/design/CVdBTy9vAATiWJAnHkB8Qx/POLI-GIGI-SIP-KES"
+              target="_blank"
+              class="project-link"
+            >
+              View Case Study →
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card featured-project" data-category="uiux">
+          <img src="assets/srp.png" alt="Sistem Riset dan Penelitian RSDM" />
+
+          <div class="project-content">
+            <span class="project-tag"> UI/UX Design </span>
+
+            <h3>Sistem Riset dan Penelitian RSDM</h3>
+
+            <p>
+              Designed a centralized research management platform for hospital
+              staff and researchers. Focused on improving usability, reducing
+              administrative complexity, and creating a seamless workflow.
+            </p>
+
+            <a
+              href="https://www.figma.com/design/GmnXRyTaN0OtbKiBTnslkX/SISTEM-RISET-DAN-PENELITIAN-RSDM"
+              target="_blank"
+              class="project-link"
+            >
+              View Case Study →
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card featured-project" data-category="uiux">
+          <img src="assets/portal.png" alt="Portal Puskesmas" />
+
+          <div class="project-content">
+            <span class="project-tag"> UI Design </span>
+
+            <h3>Portal Puskesmas</h3>
+
+            <p>
+              Designed a modern and responsive healthcare website focused on
+              usability, visual hierarchy, and user engagement across multiple
+              devices.
+            </p>
+
+            <a
+              href="https://www.figma.com/design/n38wDsLwf9avj4EKuMzDHB/WEBSITE-PROJECT"
+              target="_blank"
+              class="project-link"
+            >
+              View Case Study →
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card featured-project" data-category="uiux">
+          <img src="assets/babycare.png" alt="BabyCare Diare" />
+
+          <div class="project-content">
+            <span class="project-tag"> UI/UX Design </span>
+
+            <h3>BabyCare Diare</h3>
+
+            <p>
+              Designed a mobile health application that helps parents monitor,
+              manage, and receive educational guidance regarding diarrhea in
+              infants and children.
+            </p>
+
+            <a
+              href="https://www.figma.com/design/ifMZDjjH1abdZtDPQTagMU/BABYCARE-DIARE"
+              target="_blank"
+              class="project-link"
+            >
+              View Case Study →
+            </a>
+          </div>
+        </div>
+
+        <!-- GRAPHIC DESIGN 1 -->
+        <div class="project-card graphic-project" data-category="graphic">
+          <img src="assets/feed.PNG" alt="Instagram Feeds" />
+
+          <div class="project-content">
+            <span class="project-tag">Graphic Design</span>
+            <h3>Instagram Feeds</h3>
+
+            <a
+              href="https://drive.google.com/drive/folders/1bZ-vS2rvhwGX95y2KFW29Leddd6CiRn0?usp=sharing"
+              target="_blank"
+              class="project-link"
+            >
+              View Design →
+            </a>
+          </div>
+        </div>
+
+        <!-- GRAPHIC DESIGN 2 -->
+        <div class="project-card graphic-project" data-category="graphic">
+          <img src="assets/banner.png" alt="Banner" />
+
+          <div class="project-content">
+            <span class="project-tag">Graphic Design</span>
+            <h3>Banner</h3>
+
+            <a
+              href="https://drive.google.com/drive/folders/1sdpF3na9TnLPNQKL3xdyhhP3xehtk8vu?usp=sharing"
+              target="_blank"
+              class="project-link"
+            >
+              View Design →
+            </a>
+          </div>
+        </div>
+
+        <!-- GRAPHIC DESIGN 3 -->
+        <div class="project-card graphic-project" data-category="graphic">
+          <img src="assets/pamflet.png" alt="Pamphlet" />
+
+          <div class="project-content">
+            <span class="project-tag">Graphic Design</span>
+            <h3>Pamphlet</h3>
+
+            <a
+              href="https://drive.google.com/drive/folders/1g14XxC-OwIfUZvVCkIwvt10G3vlBhpFX?usp=sharing"
+              target="_blank"
+              class="project-link"
+            >
+              View Design →
+            </a>
+          </div>
+        </div>
+
+        <!-- GRAPHIC DESIGN 4 -->
+        <div class="project-card graphic-project" data-category="graphic">
+          <img src="assets/coverbook.png" alt="Cover Book" />
+
+          <div class="project-content">
+            <span class="project-tag">Graphic Design</span>
+            <h3>Cover Book</h3>
+
+            <a
+              href="https://drive.google.com/drive/folders/1bTwXOzXKiUuSO2zfaqw4FIAcTLFP-KfI?usp=drive_link"
+              target="_blank"
+              class="project-link"
+            >
+              View Design →
+            </a>
+          </div>
+        </div>
+
+        <!-- GRAPHIC DESIGN 5 -->
+        <div class="project-card graphic-project" data-category="graphic">
+          <img src="assets/logo.png" alt="Logo" />
+
+          <div class="project-content">
+            <span class="project-tag">Graphic Design</span>
+            <h3>Logo</h3>
+
+            <a
+              href="https://drive.google.com/drive/folders/1B5vy9sGzzDbWxaxgRVNiieoJBbvy-dib?usp=sharing"
+              target="_blank"
+              class="project-link"
+            >
+              View Design →
+            </a>
+          </div>
+        </div>
+
+        <!-- GRAPHIC DESIGN 6 -->
+        <div class="project-card graphic-project" data-category="graphic">
+          <img src="assets/maskot.PNG" alt="Mascot" />
+
+          <div class="project-content">
+            <span class="project-tag">Graphic Design</span>
+            <h3>Mascot</h3>
+
+            <a
+              href="https://drive.google.com/drive/folders/1DaMV3mtB8FuXuPL85DzmcJ2RVp7u4Xla?usp=sharing"
+              target="_blank"
+              class="project-link"
+            >
+              View Design →
+            </a>
+          </div>
+        </div>
+
+        <!-- GRAPHIC DESIGN 7 -->
+        <div class="project-card graphic-project" data-category="graphic">
+          <img src="assets/idcard.png" alt="ID Card" />
+
+          <div class="project-content">
+            <span class="project-tag">Graphic Design</span>
+            <h3>ID Card</h3>
+
+            <a
+              href="https://drive.google.com/drive/folders/1VC7874V1SJvmEIw1_gF3ZxY1RvzWZO6S?usp=drive_link"
+              target="_blank"
+              class="project-link"
+            >
+              View Design →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <div class="section-title">
+          <span>EXPERIENCE</span>
+          <h2>My Professional Journey</h2>
+          <p>
+            Experiences that shaped my skills in UI/UX Design, Graphic Design,
+            visual communication, and user-centered problem solving.
+          </p>
+        </div>
+
+        <div class="experience-list">
+          <!-- EXPERIENCE 01 -->
+          <div class="experience-item">
+            <div class="experience-number">01</div>
+
+            <div class="experience-content">
+              <h3>Medical Records Intern</h3>
+              <span>Dr. Moewardi Regional Hospital • Aug 2025 – Nov 2025</span>
+
+              <p>
+                Managed patient registration workflows, medical record
+                administration, and healthcare documentation across multiple
+                service units.
+              </p>
+
+              <p>
+                Identified inefficiencies in the research data request process
+                and applied Design Thinking methodology to design a structured
+                digital solution. Developed a high-fidelity prototype featuring
+                user account management, verification workflows, document
+                uploads, and real-time request tracking to improve accessibility
+                and operational efficiency.
+              </p>
+
+              <div class="experience-tags">
+                <span>UI/UX Design</span>
+                <span>Design Thinking</span>
+                <span>User Research</span>
+                <span>Figma</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE 02 -->
+          <div class="experience-item">
+            <div class="experience-number">02</div>
+
+            <div class="experience-content">
+              <h3>Graphic Design Staff</h3>
+              <span>Badan Eksekutif Mahasiswa (BEM) • Feb 2024 – Jan 2025</span>
+
+              <p>
+                Designed visual communication materials including logos,
+                posters, branding assets, social media content, and promotional
+                campaigns for institutional activities.
+              </p>
+
+              <p>
+                Collaborated with multidisciplinary teams to translate ideas
+                into engaging visual experiences while maintaining consistency
+                with organizational branding guidelines.
+              </p>
+
+              <div class="experience-tags">
+                <span>Graphic Design</span>
+                <span>Branding</span>
+                <span>Canva</span>
+                <span>Procreate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE 03 -->
+          <div class="experience-item">
+            <div class="experience-number">03</div>
+
+            <div class="experience-content">
+              <h3>Publication & Event Design Team</h3>
+              <span>National Seminar Committee • Nov 2024</span>
+
+              <p>
+                Developed promotional materials and publication assets for a
+                national seminar event, ensuring clear communication and strong
+                visual appeal.
+              </p>
+
+              <p>
+                Worked closely with event organizers to support audience
+                engagement through effective visual storytelling and digital
+                content design.
+              </p>
+
+              <div class="experience-tags">
+                <span>Event Design</span>
+                <span>Visual Communication</span>
+                <span>Content Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE 04 -->
+          <div class="experience-item">
+            <div class="experience-number">04</div>
+
+            <div class="experience-content">
+              <h3>Communication & Information Division Member</h3>
+              <span
+                >Politeknik Negeri Jember Choir Organization • Dec 2022 – Dec
+                2023</span
+              >
+
+              <p>
+                Managed digital communication channels, social media
+                publications, and content creation activities to strengthen
+                audience engagement.
+              </p>
+
+              <p>
+                Produced visual content, supported branding initiatives, and
+                assisted in maintaining consistent communication across various
+                platforms.
+              </p>
+
+              <div class="experience-tags">
+                <span>Social Media Design</span>
+                <span>Content Creation</span>
+                <span>Graphic Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE 05 -->
+          <div class="experience-item">
+            <div class="experience-number">05</div>
+
+            <div class="experience-content">
+              <h3>Medical Records Intern</h3>
+              <span>Dr. Soebandi Regional Hospital • Jul 2024 – Aug 2024</span>
+
+              <p>
+                Analyzed healthcare workflows and medical record filing
+                processes to identify operational challenges and improve
+                information accessibility.
+              </p>
+
+              <p>
+                Conducted observations and process evaluations related to record
+                tracking systems, providing recommendations to enhance workflow
+                efficiency and user experience within healthcare operations.
+              </p>
+
+              <div class="experience-tags">
+                <span>Workflow Analysis</span>
+                <span>Problem Solving</span>
+                <span>User-Centered Thinking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL
+    <section class="container">
+      <div class="section-title">
+        <h2>Client Feedback</h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>"Excellent work and attention to detail."</p>
+          <strong>Dr. Hendra</strong>
+        </div>
+
+        <div class="testimonial">
+          <p>"Amazing creativity and professionalism."</p>
+          <strong>Sarah Miller</strong>
+        </div>
+
+        <div class="testimonial">
+          <p>"Strong technical and design skills."</p>
+          <strong>Alex Thamrin</strong>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- CONTACT CTA
+    <section id="contact" class="contact-cta">
+      <div class="container">
+        <span class="contact-label">AVAILABLE FOR WORK</span>
+
+        <h2>
+          Let's Create Something
+          <span>Amazing Together</span>
+        </h2>
+
+        <p>
+          I'm open to internships, freelance projects, and full-time
+          opportunities. Feel free to reach out if you'd like to discuss a
+          project, collaboration, or simply connect.
+        </p>
+
+        <div class="contact-actions">
+          <a href="mailto:naufalfikryfarros@gmail.com" class="cta-primary">
+            <img src="assets/icons/gmail.svg" alt="" />
+          </a>
+
+          <a
+            href="https://wa.me/6285156730320"
+            target="_blank"
+            class="cta-social"
+          >
+            <img src="assets/wa.png" alt="" />
+          </a>
+
+          <a
+            href="https://linkedin.com/in/naufal-fikry-farros-82a77424a"
+            target="_blank"
+            class="cta-social"
+          >
+            <img src="assets/linkedin.png" alt="" />
+          </a>
+
+          <a
+            href="https://instagram.com/naufalfarros"
+            target="_blank"
+            class="cta-social"
+          >
+            <img src="assets/ig.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </section> -->
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <h3>Naufal Fikry Farros</h3>
+          <p>
+            Creating intuitive digital experiences through design and
+            creativity.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <!-- <a href="#contact">Contact</a> -->
+        </div>
+
+        <div class="footer-social">
+          <h4>Connect</h4>
+
+          <a href="https://wa.me/6285144903765" target="_blank"> WhatsApp </a>
+
+          <!-- <a href="https://instagram.com/naufalfarros" target="_blank">
+            Instagram
+          </a> -->
+
+          <a href="mailto:naufalfikryfarros@gmail.com" target="_blank">
+            Gmail
+          </a>
+
+          <a
+            href="https://linkedin.com/in/naufal-fikry-farros-82a77424a"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Naufal Fikry Farros. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
