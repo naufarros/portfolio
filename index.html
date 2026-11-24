@@ -326,7 +326,10 @@
 
         <!-- GRAPHIC DESIGN 1 -->
         <div class="project-card graphic-project" data-category="graphic">
-          <img src="assets/IMG_6213.webp" alt="Aesthetic Feed Instagram Design" />
+          <img
+            src="assets/IMG_6213.webp"
+            alt="Aesthetic Feed Instagram Design"
+          />
 
           <div class="project-content">
             <span class="project-tag">Graphic Design</span>
@@ -468,123 +471,94 @@
           </div>
         </div>
 
-        <!-- MOTION GRAPHICS 1 -->
-        <div class="project-card motion-project" data-category="motion">
-          <video
-            class="project-media"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
-          >
-            <source src="assets/IMG_6186.MP4" type="video/mp4" />
-            Browser Anda tidak mendukung video.
-          </video>
+        <div class="project-card motion-carousel" data-category="motion">
+          <div class="motion-carousel-header">
+            <div>
+              <h3>Motion Graphics Projects</h3>
+              <p>Explore my motion graphics and video designs.</p>
+            </div>
 
-          <div class="project-content">
-            <span class="project-tag">Motion Graphics</span>
+            <div class="motion-controls">
+              <button type="button" id="motionPrev" aria-label="Previous video">
+                &#8249;
+              </button>
 
-            <h3>Motion Graphics Design 1</h3>
-
-            <!-- <a
-              href="https://drive.google.com/drive/folders/1l0tZTft6IPgEdWvu2IMFcIzpobnQOj_F?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              View Design →
-            </a> -->
+              <button type="button" id="motionNext" aria-label="Next video">
+                &#8250;
+              </button>
+            </div>
           </div>
-        </div>
 
-        <!-- MOTION GRAPHICS 2 -->
-        <div class="project-card motion-project" data-category="motion">
-          <video
-            class="project-media"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
-          >
-            <source src="assets/IMG_6185.MP4" type="video/mp4" />
-            Browser Anda tidak mendukung video.
-          </video>
+          <div class="motion-viewport" id="motionViewport">
+            <div class="motion-track">
+              <article class="motion-slide">
+                <video
+                  class="project-media"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                >
+                  <source src="assets/IMG_6186.MP4" type="video/mp4" />
+                </video>
+                <div class="motion-caption">
+                  <h4>Motion Graphics Design 01</h4>
+                </div>
+              </article>
 
-          <div class="project-content">
-            <span class="project-tag">Motion Graphics</span>
+              <article class="motion-slide">
+                <video
+                  class="project-media"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                >
+                  <source src="assets/IMG_6185.MP4" type="video/mp4" />
+                </video>
+                <div class="motion-caption">
+                  <h4>Motion Graphics Design 02</h4>
+                </div>
+              </article>
 
-            <h3>Motion Graphics Design 2</h3>
+              <article class="motion-slide">
+                <video
+                  class="project-media"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                >
+                  <source src="assets/IMG_6192.MP4" type="video/mp4" />
+                </video>
+                <div class="motion-caption">
+                  <h4>Motion Graphics Design 03</h4>
+                </div>
+              </article>
 
-            <!-- <a
-              href="https://drive.google.com/drive/folders/1l0tZTft6IPgEdWvu2IMFcIzpobnQOj_F?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              View Design →
-            </a> -->
+              <article class="motion-slide">
+                <video
+                  class="project-media"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                >
+                  <source src="assets/IMG_6195.MP4" type="video/mp4" />
+                </video>
+                <div class="motion-caption">
+                  <h4>Motion Graphics Design 04</h4>
+                </div>
+              </article>
+            </div>
           </div>
-        </div>
 
-        <!-- MOTION GRAPHICS 3 -->
-        <div class="project-card motion-project" data-category="motion">
-          <video
-            class="project-media"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
-          >
-            <source src="assets/IMG_6192.MP4" type="video/mp4" />
-            Browser Anda tidak mendukung video.
-          </video>
-
-          <div class="project-content">
-            <span class="project-tag">Motion Graphics</span>
-
-            <h3>Motion Graphics Design 3</h3>
-
-            <!-- <a
-              href="https://drive.google.com/drive/folders/1l0tZTft6IPgEdWvu2IMFcIzpobnQOj_F?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              View Design →
-            </a> -->
-          </div>
-        </div>
-
-        <!-- MOTION GRAPHICS 4 -->
-        <div class="project-card motion-project" data-category="motion">
-          <video
-            class="project-media"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
-          >
-            <source src="assets/IMG_6195.MP4" type="video/mp4" />
-            Browser Anda tidak mendukung video.
-          </video>
-
-          <div class="project-content">
-            <span class="project-tag">Motion Graphics</span>
-
-            <h3>Motion Graphics Design 4</h3>
-
-            <!-- <a
-              href="https://drive.google.com/drive/folders/1l0tZTft6IPgEdWvu2IMFcIzpobnQOj_F?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              View Design →
-            </a> -->
+          <div class="motion-progress">
+            <span id="motionProgress"></span>
           </div>
         </div>
       </div>

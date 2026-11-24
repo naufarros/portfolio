@@ -520,3 +520,84 @@ window.addEventListener(
 
   }
 );
+
+/* ==========================================
+   MOTION GRAPHICS CAROUSEL
+========================================== */
+
+const motionViewport =
+  document.getElementById("motionViewport");
+
+const motionPrev =
+  document.getElementById("motionPrev");
+
+const motionNext =
+  document.getElementById("motionNext");
+
+const motionProgress =
+  document.getElementById("motionProgress");
+
+if (
+  motionViewport &&
+  motionPrev &&
+  motionNext
+) {
+  const motionTrack =
+    motionViewport.querySelector(".motion-track");
+
+  function getSlideWidth() {
+    const slide =
+      motionViewport.querySelector(".motion-slide");
+
+    const gap =
+      parseFloat(
+        getComputedStyle(motionTrack).gap
+      ) || 0;
+
+    return slide
+      ? slide.offsetWidth + gap
+      : motionViewport.clientWidth;
+  }
+
+  motionNext.addEventListener("click", () => {
+    motionViewport.scrollBy({
+      left: getSlideWidth(),
+      behavior: "smooth"
+    });
+  });
+
+  motionPrev.addEventListener("click", () => {
+    motionViewport.scrollBy({
+      left: -getSlideWidth(),
+      behavior: "smooth"
+    });
+  });
+
+  function updateMotionProgress() {
+    const maxScroll =
+      motionViewport.scrollWidth -
+      motionViewport.clientWidth;
+
+    const progress =
+      maxScroll > 0
+        ? (motionViewport.scrollLeft / maxScroll) * 100
+        : 100;
+
+    if (motionProgress) {
+      motionProgress.style.width =
+        `${progress}%`;
+    }
+  }
+
+  motionViewport.addEventListener(
+    "scroll",
+    updateMotionProgress
+  );
+
+  window.addEventListener(
+    "resize",
+    updateMotionProgress
+  );
+
+  updateMotionProgress();
+}
