@@ -532,6 +532,7 @@ section {
   padding: 20px;
 }
 
+
 /* ==========================
    MOTION GRAPHICS PROJECT
 ========================== */
@@ -540,22 +541,24 @@ section {
   position: relative;
   overflow: hidden;
   background: #ffffff;
+  border-radius: 28px;
 }
 
-/* Video Preview */
+/* Video tampil utuh */
 .motion-project .project-media {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
   height: auto;
-  object-fit: cover;
-  background: #f1f5f9;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  background: #0f172a;
   transition: transform 0.4s ease;
 }
 
 /* Hover Animation */
 .motion-project:hover .project-media {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 /* Project Content */
@@ -563,10 +566,13 @@ section {
   padding: 24px;
 }
 
-/* Video Responsive */
+/* Responsive */
 @media (max-width: 768px) {
   .motion-project .project-media {
-    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
   }
 
   .motion-project .project-content {
